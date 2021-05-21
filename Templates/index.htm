@@ -1,0 +1,32 @@
+<!DOCKTYPE html>
+<html lang="en">
+	<head>
+	<title>Zomato review predictor</title>
+	</head>
+	<body bgcolor='black'>
+		<center>
+		<img src='../static/zomato.jpg' height='100px' width='150px'>
+		<font color='red',size='20px'>
+			<form action='/predict' method="POST">
+				Enter the city :-<input type='text' id='city' name='city' value='Albany'><br>
+				Enter the Cuisine :-<input type='text' id='cuisine' name='cuisine' value='American, BBQ'><br>
+				Table Booking :-<input type='text' id='table_booking' name='table_booking' value='Yes'><br>
+				Online Delivering :-<input type='text' id='online_delivering' name='online_delivering' value='No'><br>
+				Is delivering Now :- <input type='text' id='delivering_now' name='delivering_now' value='No'><br>
+				Enter the locality :- <input type='text' id='locality' name='locality' value='Albany'><br>
+				Switch to order menu :- <input type='text' id='switch_to_order_menu' name='switch_to_order_menu' value='No'><br>
+				Total cost :- <input type='text' id='cost' name='cost' value='700'><br>
+				Total Votes :- <input type='text' id='votes' name='votes' value='25'><br>
+				<input type='submit' value='Predict'> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="reset",value='Reset'>
+			</form>
+			<br>
+			{{Make_Prediction}}
+			<br>
+			<footer>
+				Designed by <i>Nilay</i>
+			</footer>
+		</font>
+		</center>
+	</body>
+</html>s
